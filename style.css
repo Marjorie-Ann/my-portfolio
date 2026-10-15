@@ -1,0 +1,100 @@
+body {
+  background: linear-gradient(to right, #F9957F, #F2F5D0);
+  color: #222;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+p {
+  line-height: 1.5;
+  color: #000;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+header a {
+  margin-left: 20px;
+}
+
+a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+section {
+  text-align: center;
+  padding: 80px 50px;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  text-align: left;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+h1 {
+  color: #000;
+  font-size: 3rem;
+  margin: 5px 0;
+}
+
+h2 {
+  margin: 0 0 5px;
+}
+
+h4 {
+  margin: 10px 50px;
+  border: 1px solid #222;
+  padding: 20px;
+  background-color: linear-gradient(to right, #FB6A99, #fAA46B);
+}
+
+small {
+  display: block;
+  color: #da1212;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #000;
+    font-family: algerian;
+}
+
+/* responsive design */
+/* mobile */
+@media (width <= 320px) {
+    #studentList > .list-item{
+        grid-column: span 12;
+    }
+}
+
+/* tablet */
+@media (width > 320px) and (width <= 600px) {
+    #studentList > .list-item{
+        grid-column: span 4;
+    }
+}
+
+/* desktop */
+@media (width >= 1000px) {
+    #studentList > .list-item{
+        grid-column: span 2;
+    }
+}
